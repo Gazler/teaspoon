@@ -12,6 +12,10 @@ module Teaspoon
       start_server
     end
 
+    def failures?
+      execute
+    end
+
     def execute(options = {})
       @options.merge!(options)
       @suites = {}
